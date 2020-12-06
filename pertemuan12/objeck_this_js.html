@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OBJEK THIS</title>
+</head>
+<style>
+    body{ 
+        background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAB+FBMVEX/lD2JOjDzaj5DQkz8yqX/lj346WovLTD/mD4gHh9uKh1OR0MsKzHzaT6CNC//mTz///+wn56AMi/7bkC7v8qmpqbthzuurq7Hazf3jjw9PEW+hYIAExvJbTe2XjX0jDzWdjiqVTM5P0xiIxrifzqMPDD/jjo4Nz9CQ0T/kzaXUTVRU1KkUDOZRzLniT4xPE02P0UAABrjZDu9YzX7yFngnETh4+j8x6D4fz76hz7OWzdLTUzbejmTQjH52GH54WbouFL/8mzXgj8aLT+3c0DOfT/4xaUAHTD+sHh9TSmxp7OvJk9YS0TCeEDAXkRxVUO0TzE8TlceJzF5MiLgrJVxc3KOjo5gYmHOm4GTk5R7TkcAER1eGxr+pkf9vlT9sU3msU7rmULOq1O2rFqkiU2Xb0Pcjj3i1GV9Z0elakGYjlPDsVqqeUI4LirDh0JaWkdvU0pwb051ZFf65HuMYEnT1dvMsZm6lIXoqmYAMU7ryFqpgWd1VTHrlFiTY0LRopiNdG1POjBwVViqenrQnpjsrZF/LUYAJS/mkGHjk3GySEorGw/Ki3+XcmFLNCb9uIVgJDyYI0RYKyZiNi6ITEGbYDaWh35ZaW9mNScAAAbUhXLMbVSncGT3i20nLEILFjaNMBNkEwAhDAg6GR0SQkm0XURXOCScVU9xBQQVAAASiElEQVR4nO2di18TWZbHi0DBzbM0RSov8g4kIU+SxkcgKOmAzRogBEIaH6Ou285mZnGzjo6z2DyE6VFnaN22dUZn3Jl1e9v5N/fceiRVlQB+tlcjVfkp+QCfhE/V9/M755577q0qguiqq6666qqrrrrqqquuuuq8ro7g1xHqRqcP5BhoZOozoDXys6kurIM1whoKESP9/UBranpjvNNH9Alr6hrgGjmHrk4Drf7+/usY1kinj+rT1Mhn0/2fUSPnWFCg6fHxEeLaZ11abUWBo6anzvULunV+Y7q/G4rtNTLV36LxbpJvo6vXrhJX5ajOjY+jTh/Ypyi0MT3d4quNcayuuVpkHz/XAqu//zzA6vSRfYIaubbRBtZGNxBbNXL1XGsUgqa6xmoRrrFaQxAqCSi2utaS6lq/jNU0Dsnz/3jz5s1/+ur2DbLTx/dJCd24NX7rfIPU9M9v/nP/9enziw6HIxyudZ0lEomdY5+aFkj9Qh8KhX55Y3rjX8J60CLV7kMIELKOIxFFEYl8Pm9v+z7lCE4UznNmZibPQNI6B//6bxZDYf16pfLV+M83bmNY4X8lJZ/APyFE1bYoopanqMT8Vt2fZFXv1Gl8DJEov1VMsfr8F+fOj5+fnvql3qHXr6+dOjFovfVvU7cAVujOr841PkElarV5hBJ37778PLk1kEzeBU5+fy+n5IxikxuJCnrAdLc2DyE0c+3GOBSlWyGw0uq9EydODA7eTt4ed+hDN/tmf9XPBRhK1IFMsl64EPL7Db1+Q6hX4MTB6vAZfTihhD6cWpwhERtX8IXGp6fAVquDg4OnMKxfh4vjoTv907N9p69fw5+gCkmOjb835Og1wP+QGFXIUF7s8Dl9KFGFVGoxQTXjBkEUboQqg6wwrEF96qv7s/3XT/edHsdjAHU32SRj6HWEMC8sR4hFBUoWFBmHVC2VKkhHL6hLrzsGeZ24NxjW35/t6zv9m2cAq/bveQmr3lCoF2AJ33KoDP66IsdDNJ/SJ+Tl0882bswLsE5Z1jEqrNN9v7mt99drYla9DgOEIhuFEIscKoOhtyPn8sGVSOntLRFz4+p4ZJVjZYk+4FGBZh987e+VpnKgBdHnwJYKOQzlMssquRmJdOJkPrDQVtje+tsbxDg5uQaoVqv3m6j6Zrd3y47eNgJjYUblC19/DbTKoe2VxBcKpIVSiTaZGAGumXI1XP+yT6zZ+5fBPhhXEQeciJsDkxp4aafqZcPQ7srK9vZ24uOfzIdWvtB+ugdlRGFnpU+qleLlgVXLWqi3fulhr9hiUCtceDeDkH1/94J+z/nb7W+ebG8qz1ozB0+NETErg7X92nIKNBi6VF+XhOHvHn3N1h6Pnc7NJ5tPHkcinhXlsSLaJCxepH2oJoO1e+8Uq516XVKE9l78PVcpeJw4sysQ0xFC+bG5yBcSVg+sp+7hAfLeH9alxuq9eNGLHRp5sq8+UDgE58YgQiOnxen9+5P/wGp1fT0kh3WR/VhCfaxIRBTG5rgWlYjWt5cwqQpbVEmV+u7ixQVFluyHiCRhMk0R+bmxOUZI/A1aX9YBViUUarJyNPz1H4K11CJE2fOFQm3u6djYnKc5Rka+4HCdXqzXK+xspmGo5ncOgJVVTcsZoXytmAqDUsUCITntSGTz2em+02TBwM78msYSYcPW+r1K4hBylD7Mkkpt5anWij4CIki/AXetRKyaWd6Ps5Y6YKECBqXfms8zxCE16kySbcA0JzgCN3/vj3T6O1UkLZQogqW2EhQ6vF1H1fwO0TgoJC9/cneBpjWa9HcH17eKETWf0qfueo7MzlRCUi2AxXATPrk7msaosJSf4KlCSh+eOTLdUIm6pOPXa3iuyy4sZDU0beRQaYwf43A7KjSfChftR9uqlpR2/ELlQExwlADr7Mc44E4qkQovHrmyQNpltgJjreuGpayUDwsVw4tH2yrvlzWSYSh8nivlZM46o8j1nIbI+VTxsDMk8eaFRE1uK5zedVkaAlFNsKhiuwY8JxIw5Qt484LcVhjW82Wazl4p0SqClfg8f8AJktQM3ruQbAlAHpYuq9HQuYCYllGjaFgIb39pK2qmt52hGgJjYT4BMS2lwzpoQwIqfB5q7VoJyR3q0R+yGA+dFdNSOCxy/qAgBFagVm85+BXn7zlEdElES+Gw2gt3GDCscnknKh8D8ULqQ/h6wRPCtIQxUekJXiySIgncnYlsPvvixmI4XLzf1zeblKMyDLwYhdddwU6Y1rKG5mB1+hQ+mqiZO0tL0RohXdDZ8UtRlR+Ojo6uGxy9jUxFZ3UQiqqo4BuiakvRpXAqeueZdAlasBaHyvACWI0aQo5yVlQzgLmupAGWaq5GzC9FFyNP5CvQfX1JUbIqFwjM6kXZAUWpiBaUp2kjwFJLykK1VDRac+63wCo6+BGwfOElgYKA6vuHuOn3MLCclU0NVTQYFlNLO075RpC+vjvcfivDhTk7IpBrdHSgjDuk/h9xYs+qabYjFppf3HPiZeftbTGsb1lYFx4mcKmPfKOjZbxO4U8uQEGqw7iaNalq8juBOwxO1lmzEn89wHvTDPPcig/CCQsqe//CblZDp5d1gKukEXApv6ssUmTfyZpq1imBBcmK5DmAs37EtUQyq2Hr9lgAcAXitNqikGBhcZ5yCoG44nTuXvhatJbB0Gk8PPoX6HScq7GAVlp1+R3rMQsLCDlXZmdXVvA3ew/z4r6E3ajhYAGdOKR3WhMPCFle+esVEkV4WDt7TucOfnE6ZyhxJiI1RhpvVQZnYVuV0rRG1KFRTU3KKrLHw6pWq+GJ6ES0eqcwn7dTEX6bNjpj1BjTAw4OFotLXGh1+Og/siL7vxVghWHGPFGtVKJLS0vVP/76GaZFnuVWCP8wVF6QrYKpz1i44cAOhs6d6AArQ7iyarGsVap/+uYsm7C42c2roaH1uLx+V9dgiMXuioS0buBgDYSjFoulOhGN/mmfhoQlzAVjQ6DnYlo0raoqi1XkWV/fPuT1Ms+qal2dqForHC1gxXdF6fTTIe3Q8zS3cm+EifTyS/XBIjafYVY8rHAFWEWj0bU1/LoPQ188LTippAVzLZfSmnS6FH86dPmQ7fTKFQx8ic3HZTZhrVqr2jBgmqhY4HVpn6ZLy40OKV16PiRIq339QH3blDlRiTJmZbFGtQANOEWrFgjFJSdMnpuLOTSdjr3ScrBevTn5pSppkcTZbHlAO2GxThi4IRHjWoOAXLpPBwJpSVqnIQzTGnr/5MmTm50+8I8vZD9jNJbK2qrVGhbGxAFIWRPWNeyt5Za9Myw0DOukyqxFkmc1RqOGXhiqWC0DDVasuVatlipkL10g20qL/vNJ1VmLPINR4ToKyDRRceYCq+EaoqoLtHEWC+uJqqwlVJ30vnVNK2UFNrMArVVMK95iLXoHw1JTihdV6NurQwNyaStWqwXXENVAVg4rXVEZLPKMsXn22RcDj+TeCoOzqlUrTH6WZdai/6I6WEbJ+dN/sYRfa8WJS2vBYcgmrpKUFv2morKcdVYCS2P8zxMnTkEF3xwTDRCHa9pV6yrUEDJnVSoqGw3bwAL99a/V11ptMw4HotZKda1abJOy1FRnyWBp0iys5N9OnLi3ytkLx2FVa10LR1crUVE/WX0piyCksGgaUJ065f8b2Ml6KfAUeLFx+HrVOhCOVirRdHOS+C1rLAXexuFAoax4ipwt/ZcFyzG2Bq+X8IrX83UchzAPqmhxx1lES33GIl0ltrFO09mYLhDQvf0jULJOYFhWDAtr56S1WrZatHj+U6k2aO1UKpUdNbECa+mWS+l0NgagsN7uYFhVCay3b3V/f7VmjRrY+Y9AyxjZrB20OVWpIoNXAgGeFNYlnK0qY2tWi6UeeI71w0sfTKPpP78pPyrj/nyUjVyjBpGkyliBtdxNUiwt0CvdD//9GooHVkMvKdzOoiFSR9cflQ0TLC1V7Z5pCsWltLDWh7QNXc4jn7ExBsQfPkotYVqqcxUnMh4ISEJR98PQ3LsGrHeICDYLDNxW/v5/FlS4YMgLZdyuyaB39ArPK84gak7w1liQlFZjRhg+f0yrFha+qS2+a4jdtnwFwyJIghkTgnAOAU2NTLR6ndUQiYK+KwGGJMjCkJDd2d+fkc2K1Lhu3yoSEfi+ieQ8D+syd7e7LqxDRM4IsDgm8vm2ZMef2rHZ+cFwaI5bn7e3dRbpsmNUNqbDR9tZoZeXeWMFedu0wGJrUs8kZLlMJ4/0ExB6yo+FT4UNy/Lh0MheZI1clG0Sv0XBkYjwMwLg68Cryu2CsYRrqZtrQAIsboe8zc3eRpe0KW43DeMBSoixU7mYi/G4YuZhjK3NaZKbe1o2wb8T9izLawcuv5NMnPs06f1Y5/CxRCLvcC7mzpjjwyaT2Wzq6THFbe6YjSJbeD12Ouva19oxT+OzclhsfmdcQf4dQY/8Txxv2YM2nxswAaSm4Me42+2WvZV8jLe2OYuifX1yWDi/2zPI7uXiNKiwAdE+mYlLQDWB2YKy7BV5g2E9FV04IF8FIvCMkoQMzz0ehVEELHyfSIS/PF5bJteOFcYVszfvOMbOE6n5PWeR4D7JSl6VYs+5EFRa+GkOTNAeR8wxj0RIRkGX2+eDQMtkbLZMjLXW8HArrWG3lyHZIRKgwru9jM2X8Zlz7pwp5ovlesw90vvP4PwORRZkdmQnvC6vN+iDefhxxoVcORMLQfAHFXTFzbnhdsFoMru9Ng/hyplNvHpwdsNvZd9ukt2sB/99F4YV9MaCXi9QDnqPdSiafQyStsmh3vZmgpNxcxtewMdsOiCpmc09aQksnN+RDeLVxbgYu53wuGzMsS61mGC7w4dowWM+Z5z3ks81yRCUZDjk6nciM5nBlRrjsnkPuR3l8RN7R2AuYUMNkbF5UNA9bBYKiUO5DbsZipTWDmkODbIjgrG5gsQRN6Q8PsKU7Myk1wUZHlK3zYazGGJ/75mEohSyt8kWNx9Cy2TOBdGIGFZ2GQl8GOWsh+HRzZ0z53wZm9c7GbTjpzeJTo7P/RSiPPFDQ9GcoUSw6FJgedSmtOvBSNewGeaB7FB40JIoNp7XHTsicZm8ojik4zpdIG48qxhPYdl7zLb2+UQoJ0i7Jwgx+B7J3iy6IpPWlUqBGK0oWsgdO6jRBLVqLJ6DbGR+H1CcRJVWLJteLtFQbiloDJTUDryVcNShyfdH1AzEZqWVTWfpEt5hqihaIjHueNwXj7m9blxitpkl4tIzfliab+6/zUL6SrM/KpRW0B3PxXEpekDxnsMTI8p7WAkh3azM39dBmbRw/LWbFgI9ny1I8IWT75A4bLlqgKOloCwvEfK2JKu4jcEPo6UQW6lSwdaWREO5NleGKXnvEemZzPB9haaz8JDYk3PbYEocOywMY7R8QYyj1emT+nDCjQcXnvjIc7yJbS4cIpO7ZV2aD0TlbizFsxtP0Js5fH7Tlpa5HSug9Y1HmbiQxxYbNpvbDopHq9Q2a9FPthV5AQ852a7v9/7ewjuVaf4a6TS30RSU3t4uehTTpmnK07ap/P60YtlsfFl35UqA13IuVsqmV1bupArzysOFXMNHm6t9kMZiMAlgEMFMujK+WFwnbEINvN1f2dGHU3cLisOFUDAz3FiWMDXwiBCag5O5Vlwmj7DYz7VdCd8VYcPum5WiHhSuH/28lWMn3CN1ubxeLzgkjtO9edgbZCYFPmYfVKi2ljLC5JH5BjExHtebHT2ncL3l2dQKENsyFXpaTBD/ZBeguNj7bTKtnfmWXTeI8bE7nJ+nwjwtfWpegbQkwpZBGR6O2cP/Tr7ab/K2piRkz0Ca91Evxwzr4QGW1ozSElcbQeCxy6rmRhcMxaS0TG13YSHSu+whUOLdkHaAC0UVPDwMrya6Y3Gf6JabyC1JXCb3QV18/EJoBVgFFViL3REo3duGXBJasTbPQGyITIytc2nrrtKz1gFCjLiGMGWCDGNHB1RT6CWX5cNbKoUFIeYSVahsO6fH52XaAkP8kJg6zrtpfppIIiMr+XEB63PJN53gu8vz1lJrHGJBedAy/wFgPe5JUuqwRIq3lpouyW8RIlw9LTMkrns/ybDlLcuMEup41WYtTggxfIfV5/PFYiYzR41tr8bdbm/Qg5/bDTPEMPxTc9bi1dieioV7rb443iFuiuGsD8r5XIvFPadzb283XFO3teTiJpYEM8lQyMNkcma8JnnJyeuu8roP/x/iEjxEKa72/y7AeqOKIv7/LmSHiTfPakcdM56fJJ/ZtLOzu6tPXepG4ZFCdldssb645Q52jfUe4gfLLquuuuqqq6666qqrrrrqqquuuvqp+l9X8xB8MdDNHwAAAABJRU5ErkJggg==);
+        background-size:cover;
+        text-align: center;
+        }
+        </style>
+<body>
+	<script>
+		function Person(namadepan, namabelakang) {
+			this.namadepan = namadepan;
+			this.namabelakang = namabelakang;
+
+			this.namalengkap = function() {
+				return `${this.namadepan} ${this.namabelakang}`
+			}
+			this.cetaknama = function () {
+				document.write(this.namalengkap());
+			}
+		}
+		let person1 = new Person ("ANDRIAN ||", "SISTEM INFORMASI SHIFT");
+		let person2 = new Person ("REZA ||", "SISTEM INFORMASI MALAM");
+		let person3 = new Person ("BUDI ||", "SISTEM INFORMASI SHIFT");
+        let person4 = new Person ("YUDISWARA ||", "SISTEM INFORMASI PAGI");
+        let person5 = new Person ("SUPARNO ||", "SISTEM INFORMASI PAGI");
+        let person6 = new Person ("SRI ||", "SISTEM INFORMASI PAGI");
+        let person7 = new Person ("WAHYUDI ||", "SISTEM INFORMASI MALAM");
+        let person8 = new Person ("HAIDIR ||", "SISTEM INFORMASI MALAM");
+
+		person1.cetaknama();
+		document.write("<br>");
+		person2.cetaknama();
+		document.write("<br>");
+		person3.cetaknama();
+		document.write("<br>");
+        person4.cetaknama();
+        document.write("<br>");
+		person5.cetaknama();
+        document.write("<br>");
+		person6.cetaknama();
+        document.write("<br>");
+		person7.cetaknama();
+        document.write("<br>");
+		person8.cetaknama();
+	</script>
+</body>
+</html>
