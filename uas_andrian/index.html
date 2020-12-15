@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <p align ="center"><B> APLIKASI PENJUALAN BARANG </B></p><hr></hr>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENJUALAN BARANG</title><script language="javascript">
+        
+        function validation ()
+        {
+        
+        var x = new Array(4);
+        x[0]="SUSU";
+        x[1]="SIRUP";
+        x[2]="AIR MINERAL";
+        for (i = 0;i <=2; i++)
+        
+        var b = new Array(4);
+        b[0]="20000";
+        b[1]="40000";
+        b[2]="50000";
+        for (z = 0;z <=2; z++)
+        
+        var kd=document.frmaplksibrg.txtkdbrg.value;
+        if (kd=="A001")
+        {
+        document.frmaplksibrg.txtnmbrg.value=(x[0]);
+        document.frmaplksibrg.txthrgbrg.value=(b[0]);
+        return false;
+        }
+        
+        var kd=document.frmaplksibrg.txtkdbrg.value;
+        if(kd=="A002")
+        {
+        document.frmaplksibrg.txtnmbrg.value=(x[1]);
+        document.frmaplksibrg.txthrgbrg.value=(b[1]);
+        return false;
+        }
+        
+        var kd=document.frmaplksibrg.txtkdbrg.value;
+        if(kd=="A003")
+        {
+        document.frmaplksibrg.txtnmbrg.value=(x[2]);
+        document.frmaplksibrg.txthrgbrg.value=(b[2]);
+        return false;
+        }
+        
+        
+        
+        
+        var kodebarang= document.frmaplksibrg.txtkdbrg.value;
+        if(kodebarang=="")
+        {alert ("Isi Kode Barang Terlebih Dahulu");
+        document.frmaplksibrg.txtkdbrg.focus();
+        return false;
+        }
+        
+        
+        }
+        function hitung()
+        {
+        var harga=document.frmaplksibrg.txthrgbrg.value;
+        var jumlah=document.frmaplksibrg.txtjmlbrg.value;
+        document.frmaplksibrg.txtttl.value=(harga*1)*(jumlah*1);
+        return false;
+        }
+        
+        function hitungkembali()
+        {
+        var bayar=document.frmaplksibrg.txtbyr.value;
+        var jumtot=document.frmaplksibrg.txtttl.value;
+        document.frmaplksibrg.txtkmbli.value=(bayar*1)-(jumtot*1);
+        return false;
+        }
+        
+        
+        </script>
+        
+        </head>
+        <BODY>
+        <form name="frmaplksibrg" method="get">
+        <table width=50% height=50% align="center" border=1 bordercolor="red">
+        <tr>
+        <td colspan =3 align ="center">FORM APLIKASI PENJUALAN BARANG </TD>
+        </tr>
+        <tr valign="top" height="10%">
+        <td>MASUKAN KODE</td>
+        <td>:</td>
+        <td>&nbsp; &nbsp; &nbsp;<input type="text" name="txtkdbrg" value="" size="20" maxlenght="60%">
+        &nbsp; <input type="submit" name="cmdcari" value="Cari" onclick="return validation()">
+        &nbsp; <input type="submit" name="cmdbatal" value="Batal">
+        </td>
+        </tr>
+        <tr valign="top" height="10%">
+        <td>NAMA BARANG </td>
+        <td> :</td>
+        <td> &nbsp;&nbsp;&nbsp;&nbsp; <input type="textbox" name="txtnmbrg" value="" size="20" maxlenght="60%"></td>
+        </tr>
+        <tr valign="top" height="10%">
+        <td> HARGA BARANG </td>
+        <td>:</td>
+        <td>Rp.<input type="textbox" name="txthrgbrg" value="" size="20" maxlenght="60%"></td>
+        </tr>
+        <tr valign="top" height="10%">
+        <td> JUMLAH BARANG</td>
+        <td>:</td>
+        <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="textbox" name="txtjmlbrg" value="" size="20" maxlenght="60%"></td>
+        </tr>
+        <tr valign="top" height="10%">
+        <td> TOTAL</td>
+        <td>:</td>
+        <td>Rp.<input type="textbox" name="txtttl" value="" size="20" maxlenght="60%">
+        &nbsp;<input type="submit" name="cmdbayar" value="Proses" onclick="return hitung()"></td>
+        </tr>
+        <tr valign="top" height="10%">
+        <td> BAYAR </td>
+        <td>:</td>
+        <td>Rp.<input type="textbox" name="txtbyr" value="" size="20" maxlenght="60%"></td>
+        </tr>
+        <tr valign="top" height="10%">
+        <td> KEMBALI </td>
+        <td>:</td>
+        <td>Rp.<input type="textbox" name="txtkmbli" value="" size="20" maxlenght="60%">
+        &nbsp; <input type="submit" name="cmdhitung" value="Hitung" onclick="return hitungkembali()">
+        </td>
+        </tr>
+        </table>
+        </body>
+        </html>
